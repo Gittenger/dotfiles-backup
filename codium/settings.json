@@ -1,0 +1,93 @@
+{
+	"window.zoomLevel": 1,
+	"window.newWindowDimensions": "inherit",
+	"window.titleBarStyle": "custom",
+	"workbench.iconTheme": "vsclassic-icon-theme",
+	"workbench.colorCustomizations": {
+		"titleBar.activeBackground": "#1d1e22",
+		"titleBar.inactiveBackground": "#20232c",
+		"titleBar.activeForeground": "#FFB86C",
+		"titleBar.inactiveForeground": "#7a6c5c"
+	},
+	"explorer.compactFolders": false,
+	"files.watcherExclude": {
+		"**/.git/objects/**": true,
+		"**/.git/subtree-cache/**": true,
+		"**/node_modules/**": true
+	},
+	"files.exclude": {
+		"**/.git": true,
+		"**/.svn": true,
+		"**/.hg": true,
+		"**/CVS": true,
+		"**/.DS_Store": true,
+		"**/node_modules": true,
+		"**/package-lock.json": true,
+		"**/.gitignore": true,
+		"**/*.swp": true
+	},
+	"editor.fontFamily": "Fira Code",
+	"editor.fontLigatures": false,
+	"editor.fontSize": 18,
+	"editor.tabSize": 3,
+	"editor.renderWhitespace": "selection",
+	"editor.wordWrap": "on",
+	"editor.multiCursorModifier": "ctrlCmd",
+	"editor.columnSelection": false,
+	"editor.formatOnSave": true,
+	"editor.formatOnPaste": true,
+	"terminal.integrated.shell.linux": "/usr/bin/zsh",
+	"terminal.integrated.fontSize": 15,
+	"emmet.includeLanguages": {
+		"javascript": "javascriptreact"
+	},
+	"prettier.useTabs": true,
+	"prettier.tabWidth": 1,
+	"prettier.arrowParens": "avoid",
+	"prettier.singleQuote": true,
+	"prettier.semi": false,
+	"indentRainbow.colors": [
+		"rgba(128, 203, 196, .05)",
+		"rgba(128, 203, 196, .1)",
+		"rgba(128, 203, 196, .15)",
+		"rgba(128, 203, 196, .2)",
+		"rgba(128, 203, 196, .25)",
+		"rgba(128, 203, 196, .3)",
+		"rgba(128, 203, 196, .35)",
+		"rgba(128, 203, 196, .4)",
+		"rgba(128, 203, 196, .45)",
+		"rgba(128, 203, 196, .5)"
+	],
+	"indentRainbow.tabmixColor": "",
+	"indentRainbow.ignoreErrorLanguages": ["*"],
+	"workbench.colorTheme": "Simple Dark",
+	"files.autoSave": "off",
+	"update.mode": "none",
+	"javascript.suggest.paths": false,
+	"tailwindCSS.validate": true,
+	"tailwindCSS.emmetCompletions": true,
+	"css.validate": false,
+	"python.pythonPath": "/usr/bin/python",
+	"[javascriptreact]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"[jsonc]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"[javascript]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"editor.quickSuggestions": true,
+	"[json]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"vim.smartRelativeLine": true,
+	"vim.vimrc.enable": true,
+	"vim.vimrc.path": "/home/john/.vsvimrc",
+	"[html]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"editor.minimap.enabled": false,
+	"workbench.statusBar.visible": true,
+	"workbench.activityBar.visible": false
+}

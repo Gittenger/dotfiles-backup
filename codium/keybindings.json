@@ -1,0 +1,94 @@
+// Place your key bindings in this file to override the defaults
+[
+	{
+		"key": "ctrl+`",
+		"command": "workbench.action.terminal.focus"
+	},
+	{
+		"key": "ctrl+`",
+		"command": "workbench.action.focusActiveEditorGroup",
+		"when": "terminalFocus"
+	},
+	{
+		"command": "workbench.files.action.collapseExplorerFolders",
+		"key": "ctrl+alt+`"
+	},
+	{
+		"key": "alt+left",
+		"command": "workbench.action.terminal.focusPrevious",
+		"when": "terminalFocus"
+	},
+	{
+		"key": "alt+right",
+		"command": "workbench.action.terminal.focusNext",
+		"when": "terminalFocus"
+	},
+	{
+		"key": "ctrl+alt+d",
+		"command": "workbench.action.terminal.kill",
+		"when": "terminalFocus"
+	},
+	{
+		"command": "workbench.view.explorer",
+		"key": "ctrl+alt+e"
+	},
+	{
+		"key": "ctrl+shift+q",
+		"command": "workbench.action.toggleMaximizedPanel"
+	},
+	{
+		"key": "shift+alt+=",
+		"command": "editor.emmet.action.wrapWithAbbreviation"
+	},
+	{
+		"command": "editor.emmet.action.updateTag",
+		"key": "shift+alt+u"
+	},
+	{
+		"key": "shift+alt+[",
+		"command": "editor.emmet.action.balanceIn"
+	},
+	{
+		"key": "shift+alt+]",
+		"command": "editor.emmet.action.balanceOut"
+	},
+	{
+		"key": "shift+alt+\\",
+		"command": "editor.action.jumpToBracket",
+		"when": "editorTextFocus"
+	},
+	{
+		"command": "toggleVim",
+		"key": "ctrl+k v"
+	},
+	{
+		"key": "shift+alt+down",
+		"command": "editor.action.copyLinesDownAction",
+		"when": "editorTextFocus && !editorReadonly"
+	},
+	{
+		"key": "shift+alt+up",
+		"command": "editor.action.copyLinesUpAction",
+		"when": "editorTextFocus && !editorReadonly"
+	},
+	{
+		"command": "workbench.action.closeActiveEditor",
+		"key": "ctrl+shift+w"
+	},
+	{
+		"command": "workbench.action.closeWindow",
+		"key": "ctrl+alt+w"
+	},
+	{
+		"command": "saveAll",
+		"key": "ctrl+shift+k s"
+	},
+	{
+		"key": "ctrl+shift+c",
+		"command": "-workbench.action.terminal.copySelection"
+	},
+	{
+		"key": "ctrl+shift+c",
+		"command": "-workbench.action.terminal.openNativeConsole"
+	}
+]
