@@ -1,0 +1,9 @@
+zsh-autosuggestions
+zsh-syntax-highlighting
+autojump
+fzf
+dnf
+git
+
+THEMES
+powerlevel-10k
