@@ -1,0 +1,7 @@
+[user]
+	email = 36045366+Gittenger@users.noreply.github.com
+	name = Gittenger
+[init]
+	defaultBranch = master
+[core]
+	editor = vim
