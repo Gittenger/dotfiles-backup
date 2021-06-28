@@ -1,0 +1,12 @@
+@adonisjs
+@prettier
+clipboard-cli
+concurrently
+gatsby-cli
+gulp-cli
+kill-port
+live-server
+nodemon
+npm
+prettier
+sass
