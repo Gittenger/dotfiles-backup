@@ -1,0 +1,15 @@
+colorscheme desert
+
+set relativenumber
+
+let g:prettier#autoformat = 0
+autocmd BufWritePre *.js,*.jsx,*.mjs,*.ts,*.tsx,*.css,*.less,*.scss,*.json,*.graphql,*.md,*.vue PrettierAsync
+
+noremap <Leader>s :update<CR>
+
+let g:prettier#config#single_quote = 'true'
+
+let g:prettier#config#semi = 'false'
+
+nmap <Leader>ff Go@font-face {<CR><Tab>font-family: ;<CR><Tab>font-weight: 400;<CR><Tab>font-style: normal;<CR><Tab>src: url('../assets/fonts/') format('truetype');<CR>}<Esc>4k$i''<Esc>
+
