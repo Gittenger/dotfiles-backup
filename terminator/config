@@ -1,0 +1,55 @@
+[global_config]
+  handle_size = 7
+  title_transmit_fg_color = "#f1fa8c"
+  title_transmit_bg_color = "#1d1e26"
+  suppress_multiple_term_dialog = True
+  title_use_system_font = False
+  title_font = Montserrat Semi-Bold 15
+[keybindings]
+[profiles]
+  [[default]]
+    background_color = "#282a36"
+    background_darkness = 0.96
+    background_type = transparent
+    cursor_color = "#f1fa8c"
+    cursor_color_fg = False
+    font = MesloLGS NF 15
+    foreground_color = "#f8f8f2"
+    palette = "#282828:#cc241d:#8be9fd:#ff79c6:#bd93f9:#b16286:#2df961:#ff5555:#928374:#fb4934:#f1fa8c:#ffb86c:#50fa7b:#d3869b:#71ee91:#bd93f9"
+    use_system_font = False
+    copy_on_selection = True
+  [[john]]
+    background_color = "#002b36"
+    background_darkness = 0.93
+    background_type = transparent
+    cursor_color = "#aaaaaa"
+    font = Monospace 15
+    foreground_color = "#839496"
+    palette = "#073642:#dc322f:#859900:#b58900:#268bd2:#d33682:#2aa198:#eee8d5:#002b36:#cb4b16:#586e75:#657b83:#839496:#6c71c4:#93a1a1:#fdf6e3"
+    use_system_font = False
+[layouts]
+  [[default]]
+    [[[child0]]]
+      fullscreen = False
+      last_active_term = 94908c65-1cbe-44ac-9572-a4f07eab5217
+      last_active_window = True
+      maximised = True
+      order = 0
+      parent = ""
+      position = 0:0
+      size = 900, 580
+      title = Terminator
+      type = Window
+    [[[terminal1]]]
+      order = 1
+      parent = child0
+      profile = default
+      type = Terminal
+      uuid = 94908c65-1cbe-44ac-9572-a4f07eab5217
+    [[[terminal2]]]
+      order = 1
+      parent = child0
+      profile = default
+      type = Terminal
+      uuid = db090e6f-07e4-431e-ad86-a8b6cb965b5e
+[plugins]
