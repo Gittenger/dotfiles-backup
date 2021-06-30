@@ -16,5 +16,9 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'jiangmiao/auto-pairs'
     " Prettier
     Plug 'prettier/vim-prettier'
-
+    " COC
+    Plug 'neoclide/coc.nvim', {'branch': 'release'}
+    " Vim-snippets
+    Plug 'honza/vim-snippets'
+    
 call plug#end()
