@@ -6,6 +6,10 @@
   title_use_system_font = False
   title_font = Montserrat Semi-Bold 15
 [keybindings]
+  move_tab_right = <Primary><Alt>Page_Down
+  move_tab_left = <Primary><Alt>Page_Up
+  next_tab = <Primary><Shift>Page_Down
+  prev_tab = <Primary><Shift>Page_Up
 [profiles]
   [[default]]
     background_color = "#282a36"
