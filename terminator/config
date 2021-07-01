@@ -10,6 +10,7 @@
   move_tab_left = <Primary><Alt>Page_Up
   next_tab = <Primary><Shift>Page_Down
   prev_tab = <Primary><Shift>Page_Up
+  help = ""
 [profiles]
   [[default]]
     background_color = "#282a36"
