@@ -20,6 +20,7 @@ alias ....=../../../
 alias zconf='cd ~/.oh-my-zsh/custom'
 alias zrc='vim ~/.zshrc'
 alias nvconf='cd ~/.config/nvim'
+alias .dot='cd ~/.dotfiles'
 
 # OTHER USEFUL SCRIPTS
 alias treecode="tree -I node_modules"
