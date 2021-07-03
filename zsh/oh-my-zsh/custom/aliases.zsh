@@ -14,10 +14,12 @@ alias pyserve='python -m http.server 8000'
 alias xgammmaset='xgamma -ggamma .85 -rgamma .75 -bgamma .85'
 alias clr="clear"
 
-# FAVORITE PLACES
-alias cdzsh='cd ~/.oh-my-zsh/custom'
-alias zshrc='code ~/.zshrc'
-alias zshvs='cdzsh; vs.'
+# NAVIGATION
+alias ...=../../
+alias ....=../../../
+alias zconf='cd ~/.oh-my-zsh/custom'
+alias zrc='vim ~/.zshrc'
+alias nvconf='cd ~/.config/nvim'
 
 # OTHER USEFUL SCRIPTS
 alias treecode="tree -I node_modules"
