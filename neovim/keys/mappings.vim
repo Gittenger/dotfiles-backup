@@ -1,3 +1,7 @@
+" alternate escape commands
+inoremap jk <Esc>
+inoremap kj <Esc>
+
 " Save file
 noremap <Leader>s :update<CR>
 
