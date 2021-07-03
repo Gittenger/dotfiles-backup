@@ -16,3 +16,22 @@ res.status($1).json({
 	success: ${2}
 })
 endsnippet
+
+# Vanilla JS
+snippet rqu "require statement"
+const ${1} = require('${2}')
+endsnippet
+
+snippet contr "express controller"
+exports.${1} = catchAsync(async (req, res, next) => {
+	${2}
+})
+endsnippet
+
+snippet dsobj "destructure object"
+const { ${2} } = ${1}
+endsnippet
+
+snippet dsarr "destructure array"
+const [ ${2} ] = ${1}
+endsnippet
