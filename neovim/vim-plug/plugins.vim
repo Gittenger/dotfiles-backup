@@ -22,5 +22,10 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'honza/vim-snippets'
     " Colorizer
     Plug 'lilydjwg/colorizer'
+    " FZF
+    Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+    Plug 'junegunn/fzf.vim'
+    " this helps fzf know which directory is project root
+    Plug 'airblade/vim-rooter'
     
 call plug#end()
