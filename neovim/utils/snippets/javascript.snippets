@@ -1,0 +1,18 @@
+# NextJS
+snippet api "Nextjs Api handler"
+export default async function handler(req, res) {
+	const { query, method } = req
+	await dbConnect()
+	${1}
+}
+endsnippet
+
+snippet dbconn "DB Connect"
+import dbConnect from '${1}../../utils/dbConnect'
+endsnippet
+
+snippet resp "Nextjs Response" 
+res.status($1).json({
+	success: ${2}
+})
+endsnippet
