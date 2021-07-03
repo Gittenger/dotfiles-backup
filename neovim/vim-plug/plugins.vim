@@ -27,5 +27,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'junegunn/fzf.vim'
     " this helps fzf know which directory is project root
     Plug 'airblade/vim-rooter'
+    " EasyMotion
+    Plug 'easymotion/vim-easymotion'
     
 call plug#end()
