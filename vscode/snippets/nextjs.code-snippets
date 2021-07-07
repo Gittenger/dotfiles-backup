@@ -1,0 +1,20 @@
+{
+	"Api handler": {
+		"prefix": "api",
+		"body": [
+			"export default async function handler(req, res) {",
+			"\tconst { query, method } = req",
+			"\tawait dbConnect()\n\t${0}\n}"
+		],
+		"description": "NextJS api handler"
+	},
+	"DB Connect": {
+		"prefix": "dbconn",
+		"body": "import dbConnect from '${0}../../utils/dbConnect'",
+		"description": "Import dbConnect util function"
+	},
+	"NextJS response": {
+		"prefix": "resp",
+		"body": ["res.status(${1}).json({", "\tsuccess: ${0},", "})"]
+	}
+}
