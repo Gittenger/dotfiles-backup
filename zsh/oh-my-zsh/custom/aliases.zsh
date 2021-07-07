@@ -1,3 +1,8 @@
+# COMMAND SHORTCUTS
+alias l='ls'
+alias l.='ls -Ah'
+alias ll='ls -lh'
+alias ll.='ls -lAh'
 
 # APP LAUNCHERS
 alias codi=codium
