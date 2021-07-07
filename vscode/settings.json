@@ -99,12 +99,9 @@
 	"telemetry.enableTelemetry": false,
 	"debug.internalConsoleOptions": "neverOpen",
 	"code-runner.runInTerminal": true,
-	"workbench.editorAssociations": [
-		{
-			"viewType": "jupyter.notebook.ipynb",
-			"filenamePattern": "*.ipynb"
-		}
-	],
+	"workbench.editorAssociations": {
+		"*.ipynb": "jupyter.notebook.ipynb"
+	},
 	"python.defaultInterpreterPath": "/usr/bin/python3",
 	"python.languageServer": "Pylance",
 	"python.analysis.extraPaths": [
