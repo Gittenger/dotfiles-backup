@@ -10,7 +10,7 @@ fi
 export PATH="$PATH:./node_modules/.bin"
 
 # Path to your oh-my-zsh installation.
-export ZSH="/home/john/.oh-my-zsh"
+export ZSH="/home/john/.config/zsh/oh-my-zsh"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -71,7 +71,8 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 # HIST_STAMPS="mm/dd/yyyy"
 
 # Would you like to use another custom folder than $ZSH/custom?
-# ZSH_CUSTOM=/path/to/new-custom-folder
+ZSH_CUSTOM=$HOME/.config/zsh/custom
+ZDOTDIR=$HOME/.config/zsh
 
 # Which plugins would you like to load?
 # Standard plugins can be found in $ZSH/plugins/
@@ -154,7 +155,7 @@ for f in $ZSH_CUSTOM/react-scripts/*; do source $f; done
 export NODE_SCRIPTS="$HOME/scripts/node-scripts"
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
-[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+[[ ! -f ~/.config/zsh/.p10k.zsh ]] || source ~/.config/zsh/.p10k.zsh
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
