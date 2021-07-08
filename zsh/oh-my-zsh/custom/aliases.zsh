@@ -22,27 +22,22 @@ alias clr="clear"
 # NAVIGATION
 alias ...=../../
 alias ....=../../../
-alias zconf='cd ~/.oh-my-zsh/custom'
+alias zconf='cd ${ZDOTDIR}/custom'
 alias zrc='vim ~/.zshrc'
 alias nvconf='cd ~/.config/nvim'
 alias .dot='cd ~/.dotfiles'
 
 # OTHER USEFUL SCRIPTS
-alias treecode="tree -I node_modules"
+alias tree="tree -I node_modules"
+alias gorg="git remote show origin"
 
 # FZF STUFF
 alias fz="fzf"
 alias fzh="fd -H -t f | fzf" # hidden files
 alias fzi="fd -I -t f | fzf" # don't ignore
 alias fzhi="fd -I -H -t f | fzf" # hidden and don't ignore
-alias fzdir="fd -t d | fzf"
-alias fzdirx="fd -t d | fzf -e" # directory search exact
-alias fzdirh="fd -H -t d | fzf" # directory search hidden
-alias f.="fd . ${HOME} | fzf" # search home
-alias f.h="fd . -H ${HOME} | fzf" # search home, hidden
-alias fx.="f. -e" # search home exact
-alias fx.h="f.h -e" # search home hidden exact
+alias fzd="fd -t d | fzf"
+alias fzdh="fd -H -t d | fzf" # directory search hidden
 alias s="cd." # super cd folder finder 
 alias s.="cd.h" # super cd folder finder hidden
-alias s.="cd.h" # super cd folder finder hidden
-alias cd/x="cd/ --exact" # super cd root folder finder exact
+alias s/="cd/" # super cd root folder finder
