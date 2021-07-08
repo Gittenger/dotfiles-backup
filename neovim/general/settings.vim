@@ -16,6 +16,7 @@ set laststatus=0									" always display status line
 "set expandtab											" convert tabs to spaces
 set autoindent										" remembers indent from prev line
 set relativenumber								" relative line numbers
+set number 												" show current line num
 set showtabline=2									" show tab page num
 set noshowmode										" don't show mode
 set nobackup											" coc recommend
