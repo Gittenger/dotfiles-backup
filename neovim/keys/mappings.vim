@@ -20,3 +20,6 @@ nnoremap <Leader>O O<Esc>^Da
 
 " no highlighting of search results
 nnoremap <Leader>\ :noh<return><esc>
+
+" move window to tab
+nnoremap <C-w>t <C-w>T

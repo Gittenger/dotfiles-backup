@@ -29,5 +29,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'airblade/vim-rooter'
     " EasyMotion
     Plug 'easymotion/vim-easymotion'
+    " Vim Grepper for searching lines across all
+    Plug 'mhinz/vim-grepper'
     
 call plug#end()
