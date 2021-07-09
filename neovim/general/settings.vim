@@ -26,7 +26,7 @@ set nowritebackup									" coc recommend
 " color scheme
 colorscheme onehalfdark
 syntax on
-" let g:airline_theme='onehalfdark'
+let g:airline_theme='onehalfdark'
 " lightline
 " let g:lightline = { 'colorscheme': 'onehalfdark' }
 

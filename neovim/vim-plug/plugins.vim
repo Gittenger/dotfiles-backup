@@ -33,5 +33,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'mhinz/vim-grepper'
     " rainbow brackets
     Plug 'frazrepo/vim-rainbow' 
+    " Airline
+    Plug 'vim-airline/vim-airline' 
     
 call plug#end()
