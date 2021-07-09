@@ -31,5 +31,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'easymotion/vim-easymotion'
     " Vim Grepper for searching lines across all
     Plug 'mhinz/vim-grepper'
+    " rainbow brackets
+    Plug 'frazrepo/vim-rainbow' 
     
 call plug#end()
