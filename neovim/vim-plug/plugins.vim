@@ -37,5 +37,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'vim-airline/vim-airline' 
     " commenting
     Plug 'tpope/vim-commentary'
+    " vim-surround
+    Plug 'tpope/vim-surround'
     
 call plug#end()
