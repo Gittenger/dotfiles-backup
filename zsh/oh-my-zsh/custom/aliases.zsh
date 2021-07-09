@@ -13,6 +13,7 @@ alias ff='firefox &!'
 alias wrtr='libreoffice --writer $1 &'
 alias vim=nvim
 alias nv=nvim
+alias v='nvim .'
 
 # MISC TASKS
 alias pyserve='python -m http.server 8000'
