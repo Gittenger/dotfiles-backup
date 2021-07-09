@@ -35,5 +35,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'frazrepo/vim-rainbow' 
     " Airline
     Plug 'vim-airline/vim-airline' 
+    " commenting
+    Plug 'tpope/vim-commentary'
     
 call plug#end()
