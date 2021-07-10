@@ -39,5 +39,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'tpope/vim-commentary'
     " vim-surround
     Plug 'tpope/vim-surround'
+    " emmet
+    Plug 'mattn/emmet-vim' 
     
 call plug#end()
