@@ -26,6 +26,10 @@ rstgo() {
 	bitwarden &!
 }
 
+rml() {
+	rm .esd_auth .node_repl_history .xsel.log
+}
+
 vs() {
 	for var in "$@"
 	do
