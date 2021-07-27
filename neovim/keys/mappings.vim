@@ -23,3 +23,8 @@ nnoremap <Leader>\ :noh<return><esc>
 
 " move window to tab
 nnoremap <C-w>t <C-w>T
+
+" jump out of brackets/etc
+inoremap <C-k> <ESC>la
+" jump back in
+inoremap <C-j> <ESC>ha
