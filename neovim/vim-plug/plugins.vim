@@ -41,5 +41,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'tpope/vim-surround'
     " emmet
     Plug 'mattn/emmet-vim' 
+    " tagalong
+    Plug 'AndrewRadev/tagalong.vim'
     
 call plug#end()
