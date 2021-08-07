@@ -43,5 +43,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'mattn/emmet-vim' 
     " tagalong
     Plug 'AndrewRadev/tagalong.vim'
+    " Support for edge templates (adonis)
+    Plug 'watzon/vim-edge-template'
     
 call plug#end()
