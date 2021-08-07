@@ -7,6 +7,7 @@ alias ll.='ls -lAh'
 # APP LAUNCHERS
 alias codi=codium
 alias vs.='code .'
+alias f.='files .'
 alias spotify='flatpak run com.spotify.Client &!'
 alias gch='google-chrome &!'
 alias ff='firefox &!'
