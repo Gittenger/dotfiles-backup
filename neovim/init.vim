@@ -9,3 +9,4 @@ source $HOME/.config/nvim/plug-config/easymotion.vim
 source $HOME/.config/nvim/plug-config/vim-grepper.vim
 source $HOME/.config/nvim/plug-config/rainbow-brackets.vim
 source $HOME/.config/nvim/plug-config/vim-emmet.vim
+source $HOME/.config/nvim/plug-config/hexokinase.vim

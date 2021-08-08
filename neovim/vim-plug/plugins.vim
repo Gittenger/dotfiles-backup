@@ -20,8 +20,8 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'neoclide/coc.nvim', {'branch': 'release'}
     " Vim-snippets
     Plug 'honza/vim-snippets'
-    " Colorizer
-    Plug 'lilydjwg/colorizer'
+    " hexokinase
+    Plug 'rrethy/vim-hexokinase', { 'do': 'make hexokinase' }
     " FZF
     Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
     Plug 'junegunn/fzf.vim'
