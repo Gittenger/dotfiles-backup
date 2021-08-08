@@ -117,6 +117,9 @@ plugins=(
 bindkey -e
 bindkey "^[[3;3~" kill-word
 
+# auto-suggestions custom key
+bindkey '^ ' autosuggest-accept
+
 # Autojump
 [[ -s /home/john/.autojump/etc/profile.d/autojump.sh ]] && source /home/john/.autojump/etc/profile.d/autojump.sh
 
