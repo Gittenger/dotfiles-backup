@@ -157,6 +157,9 @@ export NODE_SCRIPTS="$HOME/scripts/node-scripts"
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.config/zsh/.p10k.zsh ]] || source ~/.config/zsh/.p10k.zsh
 
+# Go Lang
+export PATH=$PATH:/usr/local/go/bin
+
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
 __conda_setup="$('/home/john/.miniconda/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
