@@ -24,9 +24,9 @@ set nowritebackup									" coc recommend
 "set formatoptions-=cro						" stop newline completion of comments
 
 " color scheme
-colorscheme onehalfdark
+colorscheme dracula
 syntax on
-let g:airline_theme='onehalfdark'
+let g:airline_theme='dracula'
 " lightline
 " let g:lightline = { 'colorscheme': 'onehalfdark' }
 

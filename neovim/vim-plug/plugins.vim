@@ -45,5 +45,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'AndrewRadev/tagalong.vim'
     " Support for edge templates (adonis)
     Plug 'watzon/vim-edge-template'
+    " Dracula
+    Plug 'dracula/vim', { 'as': 'dracula' }
     
 call plug#end()
