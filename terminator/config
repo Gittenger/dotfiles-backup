@@ -20,7 +20,7 @@
     cursor_color_fg = False
     font = MesloLGS NF 15
     foreground_color = "#e4edff"
-    palette = "#ff5555:#ff5555:#8be9fd:#000aff:#000000:#c500ff:#000aff:#000000:#565b74:#ff5555:#f1fa8c:#ffb86c:#bd93f9:#ffb86c:#50fa7b:#e01b24"
+    palette = "#282a36:#ff5555:#8be9fd:#abc78f:#ffb86c:#4bc1d1:#50fa7b:#000000:#565b74:#ff5555:#f1fa8c:#ffb86c:#bd93f9:#ffb86c:#50fa7b:#f1fa8c"
     use_system_font = False
     bold_is_bright = True
     copy_on_selection = True
