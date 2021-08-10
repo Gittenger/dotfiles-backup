@@ -160,6 +160,9 @@ export NODE_SCRIPTS="$HOME/scripts/node-scripts"
 # Go Lang
 export PATH=$PATH:/usr/local/go/bin
 
+# set editor so I can use sudo -e to edit as root with nvim
+export EDITOR=nvim
+
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
 __conda_setup="$('/home/john/.miniconda/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
