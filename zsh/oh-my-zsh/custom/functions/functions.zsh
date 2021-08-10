@@ -30,6 +30,20 @@ rml() {
 	rm .esd_auth .node_repl_history .xsel.log
 }
 
+dlf() {
+	if [ "$#" -eq "0" ]
+	then
+		echo 'Error: expected dir or file (1) as arg'
+		return 1
+	else
+		read -k1 "REPLY?Permanently delete $1 ?? (y/n)  " 
+		if [[ $REPLY =~ ^[Yy]$ ]]
+		then
+			rm -rf $1
+		fi
+	fi
+}
+
 vs() {
 	for var in "$@"
 	do
