@@ -28,3 +28,7 @@ nnoremap <C-w>t <C-w>T
 inoremap <C-k> <ESC>la
 " jump back in
 inoremap <C-j> <ESC>ha
+
+" quick copy to system clip
+nnoremap <C-y>i "+yiw
+vnoremap <C-y> "+y
