@@ -47,5 +47,9 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'watzon/vim-edge-template'
     " Dracula
     Plug 'dracula/vim', { 'as': 'dracula' }
+    " for react syntax-highlightin
+    Plug 'maxmellon/vim-jsx-pretty'
+    " trying this to get jsx to work 
+    Plug 'yuezk/vim-js'
     
 call plug#end()
