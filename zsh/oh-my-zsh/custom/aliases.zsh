@@ -4,6 +4,7 @@ alias l.='ls -Ah'
 alias ll='ls -lh'
 alias ll.='ls -lAh'
 alias mkd=mkdir
+alias th=touch
 
 # APP LAUNCHERS
 alias codi=codium
