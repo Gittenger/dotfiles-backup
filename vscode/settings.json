@@ -1,5 +1,4 @@
 {
-	"window.zoomLevel": 1,
 	"window.newWindowDimensions": "inherit",
 	"window.titleBarStyle": "custom",
 	"workbench.iconTheme": "vsclassic-icon-theme",
@@ -29,7 +28,7 @@
 	"editor.fontFamily": "Fira Code",
 	"editor.fontLigatures": true,
 	"editor.fontSize": 18,
-	"editor.tabSize": 8,
+	"editor.tabSize": 3,
 	"editor.renderWhitespace": "selection",
 	"editor.wordWrap": "off",
 	"editor.multiCursorModifier": "ctrlCmd",
@@ -110,5 +109,6 @@
 	"editor.cursorStyle": "line",
 	"editor.insertSpaces": false,
 	"editor.lineNumbers": "on",
-	"editor.wordSeparators": "/\\()\"':,.;<>~!@#$%^&*|+=[]{}`?-"
+	"editor.wordSeparators": "/\\()\"':,.;<>~!@#$%^&*|+=[]{}`?-",
+	"window.zoomLevel": 1
 }
