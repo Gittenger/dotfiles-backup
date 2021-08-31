@@ -96,6 +96,11 @@ cd/() {
 	cd $(fd -H -t d -E "/home/john/" . "/"| fzf $1)
 }
 
+# super cd jump from current
+jj() {
+	cd $(fd -t d . ./ | fzf $1)
+}
+
 # change jpg to albumart.jpg
 alb() {
 	mv $1 albumart.jpg
