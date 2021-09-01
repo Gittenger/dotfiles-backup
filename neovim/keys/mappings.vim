@@ -26,8 +26,10 @@ nnoremap <C-w>t <C-w>T
 
 " jump out of brackets/etc
 inoremap <C-k> <ESC>la
+inoremap <C-l> <ESC>la
 " jump back in
 inoremap <C-j> <ESC>ha
+inoremap <C-h> <ESC>ha
 
 " quick copy to system clip
 nnoremap <C-y>i "+yiw
