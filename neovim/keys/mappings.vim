@@ -9,6 +9,8 @@ noremap <Leader>s :update<CR>
 "nnoremap <C-s> :w<CR>
 " Alternate way to quit
 nnoremap <C-Q> :wq!<CR>
+" quick close no save
+nnoremap <Leader><Leader>q :q!<CR>
 
 " Better tabbing
 vnoremap < <gv
