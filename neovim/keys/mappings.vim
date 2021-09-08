@@ -36,3 +36,6 @@ inoremap <C-h> <ESC>ha
 " quick copy to system clip
 nnoremap <C-y>i "+yiw
 vnoremap <C-y> "+y
+
+" delete item with comma
+nnoremap d, dawx
