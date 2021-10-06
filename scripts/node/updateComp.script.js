@@ -4,48 +4,55 @@ const path = require('path')
 let folderPath = './'
 const args = process.argv.slice(2)
 if (args[0]) {
-	let folderPath = args[0]
-	console.log(folderPath)
+	folderPath = args[0]
 }
 let Files = []
 
 function ThroughDirectory(Directory) {
 	fs.readdirSync(Directory).forEach((File) => {
 		const Absolute = path.join(Directory, File)
-		if (fs.statSync(Absolute).isDirectory()) return ThroughDirectory(Absolute)
+		if (Absolute.startsWith('.git')) return
+		else if (fs.statSync(Absolute).isDirectory())
+			return ThroughDirectory(Absolute)
 		else return Files.push(Absolute)
 	})
 }
 
 ThroughDirectory(folderPath)
 
+// Match category and component name
+// save to components array to generate text data for index
 const Matches = Files.filter((filename) =>
 	filename.includes('.component.jsx')
-).map((item) => item.match(/\/(\w+).component.jsx/))
+).map((item) => item.match(/(\w+)\/(\w+)\/\2.component.jsx/))
 
-const Components = Matches.map((item) => item[1])
+const Components = Matches.map(([full, category, name]) => ({
+	full,
+	category,
+	name,
+}))
 
 const data = {}
 
-Components.forEach((Component, i) => {
+Components.forEach(({ category, name }) => {
 	if (!data['imports']) {
 		data[
 			'imports'
-		] = `import ${Component} from "./${Component}${Matches[i][0]}"`
+		] = `import ${name} from "./${category}/${name}.component.jsx"`
 	} else
 		data[
 			'imports'
-		] += `\nimport ${Component} from "./${Component}${Matches[i][0]}"`
+		] += `\nimport ${name} from "./${category}/${name}.component.jsx"`
 })
 
 data['imports'] += '\nimport TComp from "./typography/typography.components.js"'
 
 data['content'] = `\nexport const CIndex = {
-		${Components.join(',')}, TComp
+		${Components.map(({ name }) => name).join(',')}, TComp
 	}
 	export default CIndex
 	`
 
 const output = data.imports + data.content
 
-// fs.writeFileSync('./components.index.js', output)
+fs.writeFileSync('./components.index.js', output)
