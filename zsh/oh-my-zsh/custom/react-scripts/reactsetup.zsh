@@ -22,4 +22,5 @@ reactsetup() {
 
 	## SCRIPT TO UPDATE PACKAGE.JSON
 	node $NODE_SCRIPTS/updatePackageForRAR.js package.json
+	node $NODE_SCRIPTS/updateComp.script.js ./src/components
 }
