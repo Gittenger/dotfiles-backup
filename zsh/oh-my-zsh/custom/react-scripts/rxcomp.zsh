@@ -1,5 +1,5 @@
 rxcomp() {
-   componentLib=$HOME/code/templates/react-component-library/
+   componentLib=$REACT_COMPONENT_LIB
 
    results=($(fzdir -m))
    [[ -n "$results" ]] && cp -r ${results[*]} $componentLib

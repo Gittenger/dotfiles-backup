@@ -153,6 +153,7 @@ for f in $ZSH_CUSTOM/react-scripts/*; do source $f; done
 
 # Custom variables
 export NODE_SCRIPTS="$HOME/scripts/node-scripts"
+export REACT_COMPONENT_LIB="$HOME/code/lib/react-component-library"
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.config/zsh/.p10k.zsh ]] || source ~/.config/zsh/.p10k.zsh

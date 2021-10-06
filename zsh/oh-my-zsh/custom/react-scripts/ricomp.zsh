@@ -1,5 +1,5 @@
 ricomp() {
-   componentLib=$HOME/code/templates/react-component-library/
+   componentLib=$REACT_COMPONENT_LIB
    results=($(fd -t d . ${componentLib} | fzf -m))
    cwd=$(pwd)
    [[ -n "$results" ]] && cp -r ${results[*]} $cwd
