@@ -1,6 +1,8 @@
 rcomp () {
-	mkdir $1
-	cd $1
+	# $2 is category of component (Admin, General, Etc)
+	# $1 is name of component
+	mkdir "$2/$1" -p
+	cd "$2/$1"
 	touch $1.component.jsx $1.styles.jsx
 	
 	## VARS
@@ -16,7 +18,7 @@ rcomp () {
 	echo -e "const ${capitalized} = () => (\n<div>Content here</div>);\n\nexport default ${capitalized};" >> ${componentFile}
 	echo -e "export const MyComponent = styled.div\`\n\n\`;" >> ${styleFile}
 	
-	cd ../
+	cd ../../
 
 	dirToExecute=$(pwd)
 	node $NODE_SCRIPTS/updateComp.script.js $dirToExecute
