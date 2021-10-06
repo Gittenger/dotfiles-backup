@@ -38,11 +38,11 @@ Components.forEach(({ category, name }) => {
 	if (!data['imports']) {
 		data[
 			'imports'
-		] = `import ${name} from "./${category}/${name}.component.jsx"`
+		] = `import ${name} from "./${category}/${name}/${name}.component.jsx"`
 	} else
 		data[
 			'imports'
-		] += `\nimport ${name} from "./${category}/${name}.component.jsx"`
+		] += `\nimport ${name} from "./${category}/${name}/${name}.component.jsx"`
 })
 
 data['imports'] += '\nimport TComp from "./typography/typography.components.js"'
@@ -55,4 +55,7 @@ data['content'] = `\nexport const CIndex = {
 
 const output = data.imports + data.content
 
-fs.writeFileSync('./components.index.js', output)
+fs.writeFileSync(
+	path.join(path.resolve(folderPath), 'components.index.js'),
+	output
+)
