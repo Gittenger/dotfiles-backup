@@ -121,3 +121,16 @@ rnall() {
 rnallx() {
     for d in ./*/ ; do /bin/zsh -c "(cd '$d' && fd . --max-depth=1 --type=d --exec node $NODE_SCRIPTS/renameMusic.js '{}')"; done
 }
+
+# same as abovebut for fixing previously renamed folders
+fixrn() {
+	node $NODE_SCRIPTS/fixRenameMusic.js $1
+}
+
+fixrnall() {
+	fd . --max-depth=1 --type=d --exec node $NODE_SCRIPTS/fixRenameMusic.js '{}'
+}
+
+fixrnallx () {
+    for d in ./*/ ; do /bin/zsh -c "(cd '$d' && fd . --max-depth=1 --type=d --exec node $NODE_SCRIPTS/fixRenameMusic.js '{}')"; done
+}
