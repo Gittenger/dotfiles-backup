@@ -16,12 +16,12 @@ if (yearRegex.test(albumStr)) {
 	resultStr = albumStr.replace(yearRegex, '')
 } else resultStr += albumStr
 
-// remove []
-resultStr = resultStr.replace(/[\[\]\|]/g, ' ').trim()
+// remove [] | _
+resultStr = resultStr.replace(/[\[\]\|\_]/g, ' ').trim()
 
 let final = ''
 if (year) {
-	final = String.prototype.concat('(', year, ') | ', resultStr)
+	final = String.prototype.concat('(', year, ') - ', resultStr)
 } else {
 	final = resultStr
 }
