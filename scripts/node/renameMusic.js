@@ -22,6 +22,7 @@ if (yearRegex.test(albumStr)) {
 resultStr = resultStr.replace(/[\(\)\[\]]/g, ' ').trim()
 resultStr = resultStr.replace(/[-_.|]/g, ' ').trim()
 
+// remove aritst name
 const artistRegex = new RegExp(artistStr)
 if (artistRegex.test(resultStr)) {
 	resultStr = resultStr.replace(artistRegex, '').trim()
@@ -29,6 +30,7 @@ if (artistRegex.test(resultStr)) {
 
 resultStr = resultStr
 	.split(' ')
+	// fix lowercase prepositions
 	.map((word, i, arr) => {
 		if (
 			(word == 'to') |
@@ -39,8 +41,16 @@ resultStr = resultStr
 			(word == 'and')
 		) {
 			return word
+		} else if ((word == 'ep') | (word == 'lp')) {
+			return `(${word.toUpperCase()})`
+		} else if ((word == 'demo') | (word == 'split')) {
+			return `(${String.prototype.concat(
+				word.charAt(0).toUpperCase(),
+				word.slice(1)
+			)})`
 		} else {
 			return String.prototype.concat(
+				// uppercase first word of title
 				word.charAt(0).toUpperCase(),
 				word.slice(1)
 			)
@@ -53,11 +63,12 @@ resultStr = resultStr.charAt(0).toUpperCase() + resultStr.slice(1)
 
 let final = ''
 if (year) {
-	final = String.prototype.concat('[', year, '] | ', resultStr)
+	final = String.prototype.concat('(', year, ') - ', resultStr)
 } else {
 	final = resultStr
 }
 
+// console.log(final)
 fs.renameSync(path.resolve(albumAbs), final)
 
-// final consideration is to remove adds for blogs, although this is only a minor concern as it's not too common
+// final consideration is to remove ads for blogs, although this is only a minor concern as it's not too common
