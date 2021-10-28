@@ -6,7 +6,7 @@ const package = JSON.parse(jsondata)
 const keys = ['start', 'build', 'test']
 
 keys.forEach(key => {
-	package.scripts[key] = 'react-app-rewired ' + key
+	package.scripts[key] = 'craco ' + key
 })
 
 const output = JSON.stringify(package)

@@ -24,7 +24,7 @@ ThroughDirectory(folderPath)
 // save to components array to generate text data for index
 const Matches = Files.filter((filename) =>
 	filename.includes('.component.jsx')
-).map((item) => item.match(/(\w+)\/(\w+)\/\2.component.jsx/))
+).map((item) => item.match(/(\w+)\/(\w+).component.jsx/))
 
 const Components = Matches.map(([full, category, name]) => ({
 	full,
@@ -38,17 +38,15 @@ Components.forEach(({ category, name }) => {
 	if (!data['imports']) {
 		data[
 			'imports'
-		] = `import ${name} from "./${category}/${name}/${name}.component.jsx"`
+		] = `import ${name} from "./${category}/${name}.component.jsx"`
 	} else
 		data[
 			'imports'
-		] += `\nimport ${name} from "./${category}/${name}/${name}.component.jsx"`
+		] += `\nimport ${name} from "./${category}/${name}.component.jsx"`
 })
 
-data['imports'] += '\nimport TComp from "./typography/typography.components.js"'
-
 data['content'] = `\nexport const CIndex = {
-		${Components.map(({ name }) => name).join(',')}, TComp
+		${Components.map(({ name }) => name).join(',')}
 	}
 	export default CIndex
 	`
