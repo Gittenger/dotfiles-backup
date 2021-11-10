@@ -91,6 +91,13 @@ cd.h() {
 	unset result
 }
 
+# super cd music
+cd.m() {
+	result=$(fd -t d . ${HOME}/media/music | fzf)
+	cd $result
+	unset result
+}
+
 # root cd
 cd/() {
 	cd $(fd -H -t d -E "/home/john/" . "/"| fzf $1)
