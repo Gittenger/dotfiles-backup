@@ -24,9 +24,9 @@
 	"Stateless functional component": {
 		"prefix": "sfc",
 		"body": [
-			"const ${1} = (${2}) => (",
+			"const ${1} = (${2}) => {",
 			"\t${0}",
-			");",
+			"};",
 			"",
 			"export default ${1};"
 		]
