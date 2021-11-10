@@ -87,6 +87,8 @@
 	"[plaintext]": {
 		"editor.quickSuggestions": false
 	},
+	"vscode-neovim.neovimExecutablePaths.linux": "/usr/bin/nvim",
+	"vscode-neovim.neovimInitVimPaths.linux": "~/.config/nvim-vscode/init.vim",
 	"vim.smartRelativeLine": true,
 	"vim.vimrc.enable": true,
 	"vim.vimrc.path": "/home/john/.vsvimrc",
@@ -108,5 +110,6 @@
 	"editor.insertSpaces": false,
 	"editor.lineNumbers": "on",
 	"editor.wordSeparators": "/\\()\"':,.;<>~!@#$%^&*|+=[]{}`?-",
+	"workbench.statusBar.visible": false,
 	"window.zoomLevel": 1
 }
