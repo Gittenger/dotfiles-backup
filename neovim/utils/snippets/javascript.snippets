@@ -45,6 +45,14 @@ catch (err) {
 }
 endsnippet
 
+snippet cns "const function"
+const ${1} = ${2}
+endsnippet
+
+snippet lt "let function"
+let ${1} = ${2}
+endsnippet
+
 snippet log "Console log"
 console.log(${1})
 endsnippet
@@ -55,4 +63,43 @@ endsnippet
 
 snippet impd "import default"
 import ${2} from '${1}'
+endsnippet
+
+# react.js
+
+snippet imr "import react"
+import React from 'react'
+
+endsnippet
+
+snippet rfc "React functional component"
+import React from 'react'
+
+const ${1} = ({${2}}) => {
+
+return (
+	<div>
+		<div>
+			Component ${3}
+		</div>
+	</div>
+	)
+}
+
+export default ${1}
+endsnippet
+
+snippet sfc "stateless functional component"
+const ${1} = ({${2}}) => {
+
+return (
+	<div>
+		<div>
+			Component ${3}
+		</div>
+	</div>
+	)
+}
+
+export default ${1}
 endsnippet
