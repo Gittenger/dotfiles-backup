@@ -45,3 +45,4 @@ alias fzdh="fd -H -t d | fzf" # directory search hidden
 alias s="cd." # super cd folder finder 
 alias s.="cd.h" # super cd folder finder hidden
 alias s/="cd/" # super cd root folder finder
+alias s.m="cd.m" # super cd in music folder
