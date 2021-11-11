@@ -159,6 +159,7 @@ export RCLONE_BOOKS="$HOME/media/documents/books/books"
 export RCLONE_LANG="$HOME/media/documents/languages"
 export RCLONE_BLOG="$HOME/media/documents/blog-posts"
 export RCLONE_GNOTE="$HOME/.local/share/gnote"
+export RCLONE_ICONS="$HOME/assets/icons"
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.config/zsh/.p10k.zsh ]] || source ~/.config/zsh/.p10k.zsh
