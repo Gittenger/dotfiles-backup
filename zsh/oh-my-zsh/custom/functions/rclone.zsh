@@ -8,7 +8,7 @@
 # }
 
 rclls() {
-	rclone ls remote:synced-folders/home
+	rclone ls gitdrive:synced
 }
 
 rclcp() {
@@ -17,14 +17,15 @@ rclcp() {
 			echo "Error: expected rclone args. See rclone --help"
 			exit 1
 		else
-			rclone copy $1 remote:synced-folders/home/$2 
+			rclone copy $1 remote:synced/$2 
 	fi		
 }
 
 rclall() {
-   rclcp $RCLONE_NOTES "notes"
-   rclcp $RCLONE_BOOKS "books"
-   rclcp $RCLONE_LANG "languages"
-   rclcp $RCLONE_BLOG "blog-posts"
-   rclcp $RCLONE_GNOTE "gnote"
+   rclcp $RCLONE_NOTES "docs/notes"
+   rclcp $RCLONE_BOOKS "docs/books"
+   rclcp $RCLONE_LANG "docs/languages"
+   rclcp $RCLONE_BLOG "docs/blog-posts"
+   rclcp $RCLONE_GNOTE "docs/gnote"
+	 rclcp $RCLONE_ICONS "icons"
 }
