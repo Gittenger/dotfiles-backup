@@ -3,9 +3,12 @@
 clipboard-cli
 concurrently
 gatsby-cli
+generate
+generate-gitignore
 gulp-cli
 kill-port
 live-server
+neovim
 nodemon
 npm
 prettier
