@@ -152,6 +152,8 @@ for f in $ZSH_CUSTOM/functions/*; do source $f; done
 for f in $ZSH_CUSTOM/react-scripts/*; do source $f; done
 
 # Custom variables
+export HSH=/home/shared
+export XTRA=/mnt/xtra
 export NODE_SCRIPTS="$HOME/scripts/node-scripts"
 export REACT_COMPONENT_LIB="$HOME/code/lib/react-component-library"
 export RCLONE_NOTES="$HOME/media/documents/notes"
