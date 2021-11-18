@@ -57,6 +57,12 @@ vs..() {
 	unset results
 }
 
+# open vlc skin-editor no errors
+vskin() {
+	cd $HOME/.local/share/vlc-skin-editor
+	./VLCSkinEditor
+}
+
 # copy multiple
 cpm(){
 	results=($(fzf -m))
@@ -93,7 +99,35 @@ cd.h() {
 
 # super cd music
 cd.m() {
-	result=$(fd -t d . ${HOME}/media/music | fzf)
+	result=$(fd -t d . ${HSH}/music | fzf)
+	cd $result
+	unset result
+}
+
+# super cd video
+cd.v() {
+	result=$(fd -t d . ${HOME}/media/videos | fzf)
+	cd $result
+	unset result
+}
+
+# super cd recordings
+cd.r() {
+	result=$(fd -t d . ${HOME}/media/recordings | fzf)
+	cd $result
+	unset result
+}
+
+# super cd documents
+cd.d() {
+	result=$(fd -t d . ${HOME}/media/documents | fzf)
+	cd $result
+	unset result
+}
+
+# for assets
+cd.a() {
+	result=$(fd -t d . ${HSH}/assets | fzf)
 	cd $result
 	unset result
 }
