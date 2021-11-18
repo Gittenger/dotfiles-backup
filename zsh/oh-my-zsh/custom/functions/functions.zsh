@@ -1,4 +1,4 @@
-SendPy() {
+endPy() {
 	for f in *.py; do
 		mv $f $1
 	done
@@ -140,6 +140,11 @@ cd/() {
 # super cd jump from current
 jj() {
 	cd $(fd -t d . ./ | fzf $1)
+}
+
+# log all current npm files
+ndirs() {
+	fd -t d -d 1 . $NODE_V | sed 's|.*\/\(.*\)|\1|' > $HOME/.dotfiles/npm/node-modules.txt
 }
 
 # change jpg to albumart.jpg
