@@ -30,6 +30,8 @@ alias zconf='cd ${ZDOTDIR}/custom'
 alias zrc='vim ~/.zshrc'
 alias nvconf='cd ~/.config/nvim'
 alias .dot='cd ~/.dotfiles'
+alias ~~='cd ${HSH}'
+alias ~.='cd ${XTRA}'
 
 # OTHER USEFUL SCRIPTS
 alias tree="tree -I node_modules"
@@ -42,7 +44,11 @@ alias fzi="fd -I -t f | fzf" # don't ignore
 alias fzhi="fd -I -H -t f | fzf" # hidden and don't ignore
 alias fzd="fd -t d | fzf"
 alias fzdh="fd -H -t d | fzf" # directory search hidden
-alias s="cd." # super cd folder finder 
-alias s.="cd.h" # super cd folder finder hidden
-alias s/="cd/" # super cd root folder finder
+alias s="cd." # super cd 
+alias s.="cd.h" # super cd hidden
+alias s/="cd/" # super cd root
 alias s.m="cd.m" # super cd in music folder
+alias s.v="cd.v" # super cd in video folder
+alias s.r="cd.r" # super cd in recordings folder
+alias s.d="cd.d" # ##### documents
+alias s.a="cd.a" # ##### assets
