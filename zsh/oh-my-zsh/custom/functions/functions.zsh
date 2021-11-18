@@ -83,65 +83,6 @@ cpwd() {
 	pwd | tr -d '\n' | clipboard
 }
 
-# super cd
-cd.() {
-	result=$(fd -t d . ${HOME}| fzf)
-	cd $result
-	unset result
-}
-
-# super cd hidden
-cd.h() {
-	result=$(fd -H -t d . ${HOME}| fzf)
-	cd $result
-	unset result
-}
-
-# super cd music
-cd.m() {
-	result=$(fd -t d . ${HSH}/music | fzf)
-	cd $result
-	unset result
-}
-
-# super cd video
-cd.v() {
-	result=$(fd -t d . ${HOME}/media/videos | fzf)
-	cd $result
-	unset result
-}
-
-# super cd recordings
-cd.r() {
-	result=$(fd -t d . ${HOME}/media/recordings | fzf)
-	cd $result
-	unset result
-}
-
-# super cd documents
-cd.d() {
-	result=$(fd -t d . ${HOME}/media/documents | fzf)
-	cd $result
-	unset result
-}
-
-# for assets
-cd.a() {
-	result=$(fd -t d . ${HSH}/assets | fzf)
-	cd $result
-	unset result
-}
-
-# root cd
-cd/() {
-	cd $(fd -H -t d -E "/home/john/" . "/"| fzf $1)
-}
-
-# super cd jump from current
-jj() {
-	cd $(fd -t d . ./ | fzf $1)
-}
-
 # log all current npm files
 ndirs() {
 	fd -t d -d 1 . $NODE_V | sed 's|.*\/\(.*\)|\1|' > $HOME/.dotfiles/npm/node-modules.txt
