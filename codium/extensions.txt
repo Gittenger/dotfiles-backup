@@ -1,0 +1,14 @@
+aaron-bond.better-comments-2.1.0
+bradlc.vscode-tailwindcss-0.6.4
+christian-kohler.npm-intellisense-1.2.2
+coenraads.bracket-pair-colorizer-2-0.1.4
+dbaeumer.vscode-eslint-2.1.8
+esbenp.prettier-vscode-6.3.2
+formulahendry.auto-close-tag-0.5.10
+ionutvmi.path-autocomplete-1.17.1
+ms-python.python-2020.10.332292344
+o-dka.vsclassic-icon-theme-1.2.3
+oderwat.indent-rainbow-7.5.0
+ritwickdey.liveserver-5.6.1
+travis.simple-dark-0.3.6
+vscodevim.vim-1.19.3
