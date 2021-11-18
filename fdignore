@@ -1,0 +1,14 @@
+jd2/
+/home/shared
+/mnt/xtra
+
+media/documents/*
+media/recordings/*
+media/pictures/*
+media/videos/*
+
+.cache
+cache
+Cache
+caches
+Caches
