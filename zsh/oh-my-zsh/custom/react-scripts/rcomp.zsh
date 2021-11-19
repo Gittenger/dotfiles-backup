@@ -9,13 +9,13 @@ rcomp () {
 	capitalized=$(echo "$1" | sed 's/.*/\u&/')
 	
 	## IMPORTS
-	echo  -e "import React from \"react\";\n\nimport {} from \"./$1.styles\";\n" >> ${componentFile}
+	echo  -e "import React from \"react\";\n\n" >> ${componentFile}
 	
 	## CONTENT
 	echo -e "const ${capitalized} = () => (\n<div>Content here</div>);\n\nexport default ${capitalized};" >> ${componentFile}	
 	cd ../
 
-	node $NODE_SCRIPTS/updateComp.script.js ../
+	node $NODE_SCRIPTS/updateComp.script.js .
 
 	unset componentFile capitalized
 }
