@@ -1,8 +1,6 @@
 rxcomp() {
-   componentLib=$REACT_COMPONENT_LIB
-
    results=($(fzd -m))
-   [[ -n "$results" ]] && cp -r ${results[*]} $componentLib
+   [[ -n "$results" ]] && cp -r ${results[*]} $REACT_COMPONENT_LIB
 
-   unset componentLib results
+   unset results
 }
