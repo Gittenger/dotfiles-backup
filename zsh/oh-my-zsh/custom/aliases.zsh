@@ -30,6 +30,7 @@ alias zconf='cd ${ZDOTDIR}/custom'
 alias zrc='vim ~/.zshrc'
 alias nvconf='cd ~/.config/nvim'
 alias .dot='cd ~/.dotfiles'
+alias .d='cd ~/.dotfiles'
 alias ~~='cd ${HSH}'
 alias ~.='cd ${XTRA}'
 
