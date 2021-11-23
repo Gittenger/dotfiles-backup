@@ -32,7 +32,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     " Vim Grepper for searching lines across all
     Plug 'mhinz/vim-grepper'
     " rainbow brackets
-    Plug 'frazrepo/vim-rainbow' 
+    " Plug 'frazrepo/vim-rainbow' 
     " Airline
     Plug 'vim-airline/vim-airline' 
     " commenting
