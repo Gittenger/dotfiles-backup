@@ -159,10 +159,12 @@ export NODE_SCRIPTS="$HOME/scripts/node-scripts"
 export REACT_COMPONENT_LIB="${HOME}/code/lib/react-component-library/tailwind"
 export RCLONE_NOTES="$HOME/media/documents/notes"
 export RCLONE_BOOKS="$HOME/media/documents/books/books"
-export RCLONE_LANG="$HOME/media/documents/languages"
-export RCLONE_BLOG="$HOME/media/documents/blog-posts"
 export RCLONE_GNOTE="$HOME/.local/share/gnote"
-export RCLONE_ICONS="$HOME/assets/icons"
+export RCLONE_LANG="$HSH/documents/languages"
+export RCLONE_BLOG="$HSH/documents/blog-posts"
+export RCLONE_ICONS="$HSH/assets/icons"
+export RCLONE_ILLUSTRATIONS="$HSH/assets/illustrations"
+export RCLONE_INSPIRATION="$HSH/assets/inspiration"
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.config/zsh/.p10k.zsh ]] || source ~/.config/zsh/.p10k.zsh
