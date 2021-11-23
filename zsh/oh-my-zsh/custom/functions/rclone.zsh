@@ -29,6 +29,7 @@ rclall() {
    rclcp $RCLONE_GNOTE "docs/gnote"
 	 rclcp $RCLONE_ICONS "assets/icons"
 	 rclcp $RCLONE_ILLUSTRATIONS "assets/illustrations"
+	 rclone copy ~/.zsh_history gitdrive:synced
 	 rclone copy ~/.config/rclone/rclone.conf gitdrive:synced
 	 cpwd
 	 cd $RCLONE_INSPIRATION/../
