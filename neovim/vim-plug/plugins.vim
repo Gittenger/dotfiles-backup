@@ -47,9 +47,13 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'watzon/vim-edge-template'
     " Dracula
     Plug 'dracula/vim', { 'as': 'dracula' }
-    " for react syntax-highlightin
+    " for react syntax-highlighting
     Plug 'maxmellon/vim-jsx-pretty'
-    " trying this to get jsx to work 
-    Plug 'yuezk/vim-js'
+    " js
+    Plug 'pangloss/vim-javascript'
+    " ts
+    Plug 'HerringtonDarkholme/yats.vim'
+    Plug 'leafgarland/typescript-vim'
+    Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}  " We recommend updating the parsers on update
     
 call plug#end()
