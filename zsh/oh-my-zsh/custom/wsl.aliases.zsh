@@ -10,16 +10,9 @@ alias th=touch
 alias python=python3
 
 # APP LAUNCHERS
-alias codi=codium
-alias vs.='code .'
-alias f.='files .'
-alias spotify='flatpak run com.spotify.Client &!'
-alias gch='google-chrome &!'
-alias ff='firefox &!'
-alias wrtr='libreoffice --writer $1 &'
-#alias vim=nvim
-#alias nv=nvim
-#alias v='nvim .'
+alias vim=nvim
+alias nv=nvim
+alias v='nvim .'
 
 # MISC TASKS
 alias pyserve='python -m http.server 8000'
@@ -29,14 +22,13 @@ alias clr="clear"
 # NAVIGATION
 alias ...=../../
 alias ....=../../../
-alias zconf='cd ${ZDOTDIR}/custom'
+alias zconf='cd ${ZDOTDIR}/oh-my-zsh/custom'
 alias zrc='vim ~/.zshrc'
 alias nvconf='cd ~/.config/nvim'
 alias winterm='/mnt/c/Users/pitte/AppData/Local/Packages/Microsoft.WindowsTerminal_8wekyb3d8bbwe/LocalState'
+alias wind='/mnt/c/users/pitte/'
 alias .dot='cd ~/.dotfiles'
 alias .d='cd ~/.dotfiles'
-alias ~~='cd ${HSH}'
-alias ~.='cd ${XTRA}'
 
 # OTHER USEFUL SCRIPTS
 alias tree="tree -I node_modules"

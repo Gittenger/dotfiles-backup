@@ -169,10 +169,10 @@ for f in $ZSH_CUSTOM/react-scripts/*; do source $f; done
 [[ ! -f ~/.config/zsh/.p10k.zsh ]] || source ~/.config/zsh/.p10k.zsh
 
 # Go Lang
-#export PATH=$PATH:/usr/local/go/bin
+export PATH=$PATH:/usr/local/go/bin
 
 # set editor so I can use sudo -e to edit as root with nvim
-#export EDITOR=nvim
+export EDITOR=nvim
 
 # auto-suggestions custom key
 #bindkey '^ ' autosuggest-accept
