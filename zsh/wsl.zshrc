@@ -175,4 +175,7 @@ export PATH=$PATH:/usr/local/go/bin
 export EDITOR=nvim
 
 # auto-suggestions custom key
-#bindkey '^ ' autosuggest-accept
+bindkey '^ ' autosuggest-accept
+
+# for adding ssh key permanently
+ssh-add -K ~/.ssh/id_ed25519 &> /dev/null
