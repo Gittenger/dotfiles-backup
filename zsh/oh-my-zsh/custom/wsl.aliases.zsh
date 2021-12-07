@@ -27,6 +27,7 @@ alias zrc='vim ~/.zshrc'
 alias nvconf='cd ~/.config/nvim'
 alias winterm='/mnt/c/Users/pitte/AppData/Local/Packages/Microsoft.WindowsTerminal_8wekyb3d8bbwe/LocalState'
 alias wind='/mnt/c/users/pitte/'
+export WIND='/mnt/c/users/pitte'
 alias .dot='cd ~/.dotfiles'
 alias .d='cd ~/.dotfiles'
 
