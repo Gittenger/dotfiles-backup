@@ -28,6 +28,7 @@ alias nvconf='cd ~/.config/nvim'
 alias winterm='/mnt/c/Users/pitte/AppData/Local/Packages/Microsoft.WindowsTerminal_8wekyb3d8bbwe/LocalState'
 alias wind='/mnt/c/users/pitte/'
 export WIND='/mnt/c/users/pitte'
+export SKRM='/mnt/c/Users/pitte/Documents/My Games/Skyrim Special Edition/Saves'
 alias .dot='cd ~/.dotfiles'
 alias .d='cd ~/.dotfiles'
 
