@@ -178,4 +178,4 @@ export EDITOR=nvim
 bindkey '^ ' autosuggest-accept
 
 # for adding ssh key permanently
-ssh-add -K ~/.ssh/id_ed25519 &> /dev/null
+eval `keychain -q --eval id_ed25519`
