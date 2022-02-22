@@ -100,5 +100,14 @@
 		"key": "win+alt+down",
 		"command": "editor.action.insertCursorBelow",
 		"when": "editorTextFocus"
+	},
+	{
+		"key": "ctrl+alt+y",
+		"command": "redo"
+	},
+	{
+		"key": "ctrl+alt+f",
+		"command": "actions.find",
+		"when": "editorFocus || editorIsOpen"
 	}
 ]
