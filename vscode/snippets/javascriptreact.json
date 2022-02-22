@@ -33,11 +33,11 @@
 	},
 	"Import CIndex": {
 		"prefix": "im:cind",
-		"body": ["import CIndex from \"../components.index.js\";"]
+		"body": ["import CIndex from \"../components.index.js\""]
 	},
 	"Destructure CIndex": {
 		"prefix": "ds:cind",
-		"body": "const { ${0} } = CIndex;"
+		"body": "const { ${0} } = CIndex"
 	},
 	"Import from TComp": {
 		"prefix": "im:tcomp",
@@ -50,6 +50,11 @@
 	"Import component": {
 		"prefix": "imcmp",
 		"body": ["import ${0} from \"../${0}/${0}.component.jsx\""]
+	},
+	"console log": {
+		"prefix": "log",
+		"body": "console.log(${0})",
+		"description": "log to console"
 	},
 	"Imp styled comp w/css": {
 		"prefix": "imsc:css",
@@ -121,6 +126,6 @@
 	},
 	"Destructure Object": {
 		"prefix": "ds:obj",
-		"body": ["const { ${0} } = ${1};"]
+		"body": ["const { ${0} } = ${1}"]
 	}
 }
