@@ -13,3 +13,4 @@ let g:prettier#config#semi = 'false'
 
 nmap <Leader>ff Go@font-face {<CR><Tab>font-family: ;<CR><Tab>font-weight: 400;<CR><Tab>font-style: normal;<CR><Tab>src: url('../assets/fonts/') format('truetype');<CR>}<Esc>4k$i''<Esc>
 
+let @a=<plugcs>"`ca`{<Esc>pi<Esc>
