@@ -27,13 +27,12 @@
 	},
 	"editor.fontFamily": "Fira Code",
 	"editor.fontLigatures": true,
-	"editor.fontSize": 18,
+	"editor.fontSize": 22,
 	"editor.tabSize": 3,
 	"editor.renderWhitespace": "selection",
-	"editor.wordWrap": "off",
+	"editor.wordWrap": "on",
 	"editor.multiCursorModifier": "ctrlCmd",
 	"editor.columnSelection": false,
-	"editor.formatOnSave": true,
 	"editor.formatOnPaste": true,
 	"terminal.integrated.shell.linux": "/usr/bin/zsh",
 	"terminal.integrated.fontSize": 15,
@@ -67,6 +66,7 @@
 	"tailwindCSS.validate": true,
 	"tailwindCSS.emmetCompletions": true,
 	"css.validate": false,
+	"path-autocomplete.extensionOnImport": true,
 	"python.autoComplete.extraPaths": ["/usr/local/lib/python3.8"],
 	"[javascriptreact]": {
 		"editor.defaultFormatter": "esbenp.prettier-vscode"
@@ -91,7 +91,7 @@
 	"vscode-neovim.neovimInitVimPaths.linux": "~/.config/nvim-vscode/init.vim",
 	"vim.smartRelativeLine": true,
 	"vim.vimrc.enable": true,
-	"vim.vimrc.path": "/home/john/.vsvimrc",
+	"vim.vimrc.path": "~/.vsvimrc",
 	"[html]": {
 		"editor.defaultFormatter": "esbenp.prettier-vscode"
 	},
@@ -110,6 +110,7 @@
 	"editor.insertSpaces": false,
 	"editor.lineNumbers": "on",
 	"editor.wordSeparators": "/\\()\"':,.;<>~!@#$%^&*|+=[]{}`?-",
-	"workbench.statusBar.visible": false,
+	"bracket-pair-colorizer-2.depreciation-notice": false,
+	"editor.formatOnSave": true,
 	"window.zoomLevel": 1
 }
