@@ -1,0 +1,2 @@
+/home/john/.miniconda
+/home/john/.miniconda/envs/neovim
