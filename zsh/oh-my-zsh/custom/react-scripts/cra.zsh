@@ -4,8 +4,10 @@ cra.(){
       echo 'Error: expected name (1) as arg'
       exit 1
    else
-      npx create-react-app $1
+      git clone git@github.com:Gittenger/react-tailwind-template.git $1
       cd $1
-      reactsetup
+      rm -rf .git
+      git init
+      npm i
    fi
 }
