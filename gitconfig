@@ -1,7 +1,12 @@
 [user]
 	email = 36045366+Gittenger@users.noreply.github.com
-	name = Gittenger
+	name = John Pittenger
+
+[includeIf "gitdir:~/code/projects/youtube/"]
+	path = ~/code/projects/youtube/.gitconfig
+
 [init]
-	defaultBranch = master
+	defaultBranch = main
+
 [core]
 	editor = nvim
