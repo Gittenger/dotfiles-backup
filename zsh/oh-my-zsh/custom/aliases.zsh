@@ -3,6 +3,7 @@ alias l='ls'
 alias l.='ls -Ah'
 alias ll='ls -lh'
 alias ll.='ls -lAh'
+alias 00='npm start'
 alias mkd=mkdir
 alias th=touch
 
