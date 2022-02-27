@@ -1,0 +1,10 @@
+themes::
+global::
+firefly-dark
+noir-dark
+
+app-style:
+fusion
+
+window-dec:
+arc-aurora

@@ -1,0 +1,52 @@
+Arch install,
+::
+check UEFI mode
+ls /sys/firmware/efi/efivars
+or
+efivar -l
+::
+check internet
+::
+timedatectl set-ntp true
+::
+cfdisk
+ENCRYPT::
+::
+mkfs.fat -F32 <boot-device>
+mkfs.ext4 <root-device>
+mkswap <swap-device>
+swapon <swap-device>
+::
+mount fs
+::
+check /etc/pacman.d/mirrorlist
+/etc/pacman.conf -> [multilib]; Include ^^mirrorlist
+^^do this in root install as well
+::
+Install pckg
+base base-devel linux linux-firmware nano vim
+networkmanager <or> dhcpd
+::
+genfstab -U /mnt >> /mnt/etc/fstab
+::
+arch-chroot /mnt
+::
+ln -sf /usr/share/zoneinfo/Region/City /etc/localtime
+hwclock --systohc
+::
+vim /etc/locale.gen
+locale-gen
+::
+cat "LANG=<locale>" >> /etc/locale.conf
+::
+echo <hostname> >> /etc/hostname
+vim /etc/hosts
+::
+systemctl enable NetworkManager <or> dhcpd
+passwd
+useradd -mg users -G wheel,other,groups,here -s /bin/bash username
+passwd username
+vim /etc/sudoers
+^^edit "wheel" group
+::
+Install bootloader

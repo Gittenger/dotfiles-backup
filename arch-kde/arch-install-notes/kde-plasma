@@ -1,0 +1,14 @@
+Installing KDE Plasma
+::
+Install pckgs,
+xorg sddm plasma kde-applications
+::
+sudo systemctl enable sddm
+sudo systemctl enable NetworkManager
+::
+Check sddm.conf file,
+sudo vim /usr/lib/sddm/sddm.conf.d/default.conf
+# Check theme section
+Current=breeze
+
+sudo systemctl reboot

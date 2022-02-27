@@ -1,0 +1,25 @@
+yay install::
+git clone <yay>
+makepkg -si
+
+pacman pkgs::
+::
+git
+latte-dock
+alacritty
+discord
+bitwarden
+code
+ntfs-3g
+pacman-contrib
+tree
+nftables
+falkon
+unzip
+ncdu
+
+yay pkgs::
+::
+eddie-ui
+google-chrome
+ckb-next
