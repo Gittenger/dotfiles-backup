@@ -1,0 +1,62 @@
+[$Version]
+update_info=kwinrules.upd:replace-placement-string-to-enum,kwinrules.upd:use-virtual-desktop-ids
+
+[1]
+Description=Application settings for konsole
+clientmachine=localhost
+noborder=true
+noborderrule=3
+wmclass=konsole
+wmclassmatch=1
+
+[2]
+Description=Application settings for alacritty
+clientmachine=localhost
+noborder=true
+noborderrule=3
+wmclass=alacritty
+wmclassmatch=1
+
+[2e6704dc-4447-4544-8add-6d0697d6fa71]
+Description=Window settings for alacritty
+clientmachine=localhost
+title=john@gala:~
+titlematch=1
+types=1
+wmclass=alacritty
+wmclassmatch=1
+
+[36e6bf77-4bff-4a58-beea-3422bef50000]
+Description=Application settings for alacritty
+clientmachine=localhost
+noborder=true
+noborderrule=3
+wmclass=alacritty
+wmclassmatch=1
+
+[6ec9e8ee-a832-4417-b373-6022dbacb16f]
+Description=Application settings for konsole
+clientmachine=localhost
+noborder=true
+noborderrule=3
+wmclass=konsole
+wmclassmatch=1
+
+[9072fc2f-bbb5-4825-9f47-2d0b6dbe2c0c]
+Description=Application settings for alacritty
+clientmachine=localhost
+noborder=true
+noborderrule=5
+wmclass=alacritty
+wmclassmatch=1
+
+[General]
+count=2
+rules=1,2
+
+[c2038010-0c23-4ffa-9711-3073ceac3327]
+Description=Application settings for alacritty
+clientmachine=localhost
+noborderrule=5
+wmclass=alacritty
+wmclassmatch=1
